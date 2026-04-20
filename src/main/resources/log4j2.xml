@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Properties>
+        <!-- Log directory -->
+        <Property name="logDir">logs</Property>
+        <Property name="fileName">automation.log</Property>
+    </Properties>
+
+    <Appenders>
+
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c - %msg%n"/>
+        </Console>
+
+        <!-- Rolling File Appender (Daily Logs) -->
+        <RollingFile name="FileAppender"
+                     fileName="${logDir}/${fileName}"
+                     filePattern="${logDir}/archive/automation-%d{yyyy-MM-dd}.log.gz">
+
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n</Pattern>
+            </PatternLayout>
+
+            <Policies>
+                <!-- Roll everyday -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+
+            <!-- Keep last 7 days logs -->
+            <DefaultRolloverStrategy max="7"/>
+
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+
+        <!-- Framework specific logger -->
+        <Logger name="com.skillo" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+
+        <!-- Root Logger -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+
+    </Loggers>
+
+</Configuration>

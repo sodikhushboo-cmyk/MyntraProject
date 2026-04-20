@@ -1,0 +1,15 @@
+<suite name="MyntraSuite" parallel="tests" thread-count="3">
+
+    <test name="ChromeTest1">
+        <classes>
+            <class name="com.example.demo.MyntraLoginTest"/>
+        </classes>
+    </test>
+
+    <test name="ChromeTest2">
+        <classes>
+            <class name="com.example.demo.MyntraLoginTest"/>
+        </classes>
+    </test>
+
+</suite>

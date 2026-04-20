@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="36" passed="36" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-19T18:09:56 IST" name="Default suite" finished-at="2026-04-19T18:19:26 IST" duration-ms="570053">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-04-19T18:09:56 IST" name="Default test" finished-at="2026-04-19T18:19:26 IST" duration-ms="570053">
+      <class name="com.skillo.runner.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:09:56 IST" name="setUpClass" finished-at="2026-04-19T18:09:57 IST" duration-ms="463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@628c493e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:09:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:10:10 IST" duration-ms="13245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user is able to place order from cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:10:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:10:17 IST" duration-ms="7192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can click place order multiple times"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:10:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:10:24 IST" duration-ms="6342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify page loads before placing order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:10:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:10:31 IST" duration-ms="7259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify place order button is clickable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:10:39 IST" duration-ms="8449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user refresh and place order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:10:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:10:48 IST" duration-ms="8829" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify repeated refresh does not break flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:10:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:10:56 IST" duration-ms="8249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user tries place order without refresh"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:10:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:11:04 IST" duration-ms="7952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify navigation back to cart and place order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:11:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:11:13 IST" duration-ms="9057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify place order after multiple navigations"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:11:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:11:21 IST" duration-ms="7981" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user performs only navigation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:11:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:11:29 IST" duration-ms="7151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user performs only refresh"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:11:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:11:36 IST" duration-ms="7508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can navigate to Topwear"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:11:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:11:49 IST" duration-ms="13344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can apply filters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:11:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:12:00 IST" duration-ms="10260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can open product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:12:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:12:14 IST" duration-ms="14369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can navigate multiple times to Topwear"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:12:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:12:23 IST" duration-ms="8584" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify products are visible after navigation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:12:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:12:41 IST" duration-ms="18757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify filter does not break navigation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:12:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:12:51 IST" duration-ms="9646" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify behavior when filter not applied"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:12:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:13:00 IST" duration-ms="9193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can open product without applying filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:13:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:13:12 IST" duration-ms="11391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify repeated product click handling"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:13:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:13:24 IST" duration-ms="11887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify login flow with valid mobile number"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:13:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:13:38 IST" duration-ms="14098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error for less than 10 digits"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:13:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:13:57 IST" duration-ms="19096" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error for alphabets in mobile number"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:13:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:14:13 IST" duration-ms="15868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error for special characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:14:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:14:29 IST" duration-ms="16411" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify behavior when mobile number is empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:14:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:14:46 IST" duration-ms="17450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify system accepts any valid 10 digit number"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:14:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:15:02 IST" duration-ms="15373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify system restricts more than 10 digits"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:15:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:15:38 IST" duration-ms="35972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user cannot add product without selecting size"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:15:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:15:55 IST" duration-ms="17512" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can select size"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:15:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:16:31 IST" duration-ms="35303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can click Add to Bag"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:16:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:17:22 IST" duration-ms="50899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can navigate to bag"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:17:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:17:55 IST" duration-ms="33883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Add to Bag without switching tab"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:17:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:18:15 IST" duration-ms="19228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify behavior when no size selected"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:18:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:18:35 IST" duration-ms="20307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify multiple clicks on Add to Bag without size"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:18:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:18:52 IST" duration-ms="17378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Add to Bag button is clickable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:18:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-19T18:19:26 IST" duration-ms="34052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify size options are available"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.skillo.runner.Runner@54e041a4]" started-at="2026-04-19T18:19:26 IST" name="tearDownClass" finished-at="2026-04-19T18:19:26 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.skillo.runner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
