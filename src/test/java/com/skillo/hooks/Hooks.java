@@ -2,7 +2,7 @@ package com.skillo.hooks;
 
 import com.skillo.base.Keyword;
 import com.skillo.utils.App;
-import com.skillo.utils.ScreenshotUtil;
+import com.skillo.utils.Screenshotutil;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.After;
@@ -58,7 +58,7 @@ public class Hooks {
 
                 // 📸 Attach Screenshot
                 try {
-                    byte[] screenshot = ScreenshotUtil.takeScreenshot();
+                    byte[] screenshot = Screenshotutil.takeScreenshot();
 
                     Allure.addAttachment(
                             "Failure Screenshot",

@@ -5,7 +5,7 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.skillo.base.Keyword;
 
-public class ScreenshotUtil {
+public class Screenshotutil {
 
     public static byte[] takeScreenshot() {
         return ((TakesScreenshot) Keyword.getDriver())
