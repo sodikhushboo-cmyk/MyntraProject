@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.skillo.base.Keyword;
-import com.skillo.pages.MyntraCartPage;
+import com.skillo.pages.AddToCartPage;
 
 import io.cucumber.java.en.*;
 
@@ -16,11 +16,11 @@ public class CartStep {
 
     private static final Logger LOG = LogManager.getLogger(CartStep.class);
 
-    private MyntraCartPage cartPage;
+    private AddToCartPage cartPage;
     private WebDriver driver;
 
     public CartStep() {
-        cartPage = new MyntraCartPage();
+        cartPage = new AddToCartPage();
         driver = Keyword.getDriver();
         LOG.info("CartStep initialized");
     }

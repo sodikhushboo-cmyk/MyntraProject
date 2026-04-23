@@ -6,7 +6,7 @@
       <class name="com.skillo.runner.Runner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="14"/>
+          <include name="runScenario" invocation-numbers="49 18 50 19 20 21 22 23 45"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.skillo.runner.Runner -->
