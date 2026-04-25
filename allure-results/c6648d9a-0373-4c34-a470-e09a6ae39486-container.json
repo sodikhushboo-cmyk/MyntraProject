@@ -1,1 +1,0 @@
-{"uuid":"c6648d9a-0373-4c34-a470-e09a6ae39486","name":"com.skillo.base.BaseClass.setUp","children":["86b1d316-0486-4e34-bb2d-69b3e1bb9620"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1776999361774,"stop":1776999367627}],"afters":[],"start":1776999361774,"stop":1776999367627}
