@@ -1,21 +1,16 @@
 package com.skillo.hooks;
 
+import java.time.Duration;
+
 import com.skillo.base.Keyword;
 import com.skillo.utils.App;
-import com.skillo.utils.Screenshotutil;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
 
-import io.qameta.allure.Allure;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.io.ByteArrayInputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 public class Hooks {
 
@@ -24,94 +19,39 @@ public class Hooks {
     @Before
     public void setUp(Scenario scenario) {
 
-        String scenarioName = scenario.getName();
+        LOG.info("Starting Scenario: {}", scenario.getName());
 
-        LOG.info("========== SCENARIO START ==========");
-        LOG.info("Starting Scenario: {}", scenarioName);
+        Keyword.openBrowser(App.browser());
 
-        try {
-            String browser = App.browser();
-            String url = App.url();
+        Keyword.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Keyword.getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 
-            LOG.info("Opening browser: {}", browser);
-            Keyword.openBrowser(browser);
-
-            LOG.info("Launching URL: {}", url);
-            Keyword.launchUrl(url);
-
-        } catch (Exception e) {
-            LOG.error("Failed during setup for scenario: {}", scenarioName, e);
-            throw e;
-        }
+        Keyword.launchUrl(App.url());
     }
 
     @After
     public void tearDown(Scenario scenario) {
 
-        String scenarioName = scenario.getName();
+        LOG.info("Ending Scenario: {}", scenario.getName());
 
-        try {
+        // 📸 Screenshot logic
+        if (scenario.isFailed()) {
 
-            if (scenario.isFailed()) {
+            byte[] screenshot = Keyword.takeScreenshot(scenario.getName(), "failed");
 
-                LOG.error("❌ SCENARIO FAILED: {}", scenarioName);
-
-                // 📸 Attach Screenshot
-                try {
-                    byte[] screenshot = Screenshotutil.takeScreenshot();
-
-                    Allure.addAttachment(
-                            "Failure Screenshot",
-                            new ByteArrayInputStream(screenshot)
-                    );
-
-                    LOG.info("Screenshot attached to Allure");
-
-                } catch (Exception e) {
-                    LOG.error("Failed to capture screenshot", e);
-                }
-
-                // 📜 Attach LOG FILE  ✅ YOUR QUESTION ANSWER
-                try {
-                    byte[] logFile = Files.readAllBytes(Paths.get("logs/automation.log"));
-
-                    Allure.addAttachment(
-                            "Execution Logs",
-                            "text/plain",
-                            new ByteArrayInputStream(logFile),
-                            ".log"
-                    );
-
-                    LOG.info("Log file attached to Allure");
-
-                } catch (Exception e) {
-                    LOG.error("Failed to attach log file", e);
-                }
-
-            } else {
-                LOG.info("✅ SCENARIO PASSED: {}", scenarioName);
+            if (screenshot != null) {
+                scenario.attach(screenshot, "image/png", "FAILED Screenshot");
             }
 
-        } catch (Exception e) {
-            LOG.error("Error while evaluating scenario result: {}", scenarioName, e);
-        }
+        } else {
 
-        // Driver cleanup
-        try {
-            if (Keyword.getDriver() != null) {
+            byte[] screenshot = Keyword.takeScreenshot(scenario.getName(), "passed");
 
-                LOG.info("Closing browser for scenario: {}", scenarioName);
-
-                Keyword.getDriver().quit();
-                Keyword.unload();
-
-                LOG.info("Browser closed successfully");
+            if (screenshot != null) {
+                scenario.attach(screenshot, "image/png", "PASSED Screenshot");
             }
-
-        } catch (Exception e) {
-            LOG.error("Error while closing browser for scenario: {}", scenarioName, e);
         }
 
-        LOG.info("========== SCENARIO END ==========\n");
+        Keyword.closeBrowser();
     }
 }

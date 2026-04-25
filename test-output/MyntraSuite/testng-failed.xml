@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyntraSuite]">
+  <test thread-count="5" name="Myntra-All-Tests(failed)">
+    <classes>
+      <class name="com.skillo.tests.CartPageTest">
+        <methods>
+          <include name="verifyMultipleNavigation"/>
+          <include name="verifyPlaceOrder"/>
+          <include name="verifyRefreshAndPlaceOrder"/>
+          <include name="verifyMultiplePlaceOrderClicks"/>
+          <include name="setupPages"/>
+          <include name="verifyMultipleRefresh"/>
+          <include name="tearDown"/>
+          <include name="verifyNavigationAndPlaceOrder"/>
+          <include name="verifyPlaceOrderButtonClickable"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.skillo.tests.CartPageTest -->
+      <class name="com.skillo.tests.ProductDetailsTest">
+        <methods>
+          <include name="verifyAddToBagWithSize"/>
+          <include name="setupPage"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.skillo.tests.ProductDetailsTest -->
+      <class name="com.skillo.tests.LoginPageTest">
+        <methods>
+          <include name="verifyPopupAfterRefresh"/>
+          <include name="setupPage"/>
+          <include name="tearDown"/>
+          <include name="verifyInvalidMobileNumber"/>
+          <include name="verifyLoginPopupDisplayed"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.skillo.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Myntra-All-Tests(failed) -->
+</suite> <!-- Failed suite [MyntraSuite] -->

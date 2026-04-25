@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>36/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>46/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 19 18:09:56 IST 2026</td>
+<td>Started on:</td><td>Fri Apr 24 13:10:19 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>570 seconds (570053 ms)</td>
+<tr><td>Total time:</td><td>1292 seconds (1292127 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,105 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify products are visible after navigation", "Myntra Home Page Functionality"</td>
+<td><div><pre>java.lang.AssertionError: ❌ Intentional Failure: Products not visible expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.skillo.stepDefinations.HomeSteps.products_should_be_visible(HomeSteps.java:120)
+	at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/Home.feature:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace52290172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace52290172'><pre>java.lang.AssertionError: ❌ Intentional Failure: Products not visible expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.skillo.stepDefinations.HomeSteps.products_should_be_visible(HomeSteps.java:120)
+	at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/Home.feature:31)
+</pre></div></td>
+<td>37</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user refresh and place order", "Myntra Cart Functionality"</td>
+<td><div><pre>java.lang.AssertionError: ❌ Intentional Failure: Order not placed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.skillo.stepDefinations.CartStep.order_should_be_placed_successfully(CartStep.java:97)
+	at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/Cart.feature:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1876028021", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1876028021'><pre>java.lang.AssertionError: ❌ Intentional Failure: Order not placed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.skillo.stepDefinations.CartStep.order_should_be_placed_successfully(CartStep.java:97)
+	at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/Cart.feature:37)
+</pre></div></td>
+<td>47</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation back to cart and place order", "Myntra Cart Functionality"</td>
+<td><div><pre>java.lang.AssertionError: ❌ Intentional Failure: Order not placed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.skillo.stepDefinations.CartStep.order_should_be_placed_successfully(CartStep.java:97)
+	at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/Cart.feature:47)
+</pre></div><a href='#' onClick='toggleBox("stack-trace488388565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace488388565'><pre>java.lang.AssertionError: ❌ Intentional Failure: Order not placed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.skillo.stepDefinations.CartStep.order_should_be_placed_successfully(CartStep.java:97)
+	at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/Cart.feature:47)
+</pre></div></td>
+<td>47</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to place order from cart", "Myntra Cart Functionality"</td>
+<td><div><pre>java.lang.AssertionError: ❌ Intentional Failure: Order not placed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.skillo.stepDefinations.CartStep.order_should_be_placed_successfully(CartStep.java:97)
+	at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/Cart.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1017838183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1017838183'><pre>java.lang.AssertionError: ❌ Intentional Failure: Order not placed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.skillo.stepDefinations.CartStep.order_should_be_placed_successfully(CartStep.java:97)
+	at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/Cart.feature:8)
+</pre></div></td>
+<td>50</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can click place order multiple times", "Myntra Cart Functionality"</td>
+<td><div><pre>java.lang.AssertionError: ❌ Intentional Failure: Order not placed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.skillo.stepDefinations.CartStep.order_should_be_placed_successfully(CartStep.java:97)
+	at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/Cart.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1197430386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1197430386'><pre>java.lang.AssertionError: ❌ Intentional Failure: Order not placed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.skillo.stepDefinations.CartStep.order_should_be_placed_successfully(CartStep.java:97)
+	at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/Cart.feature:17)
+</pre></div></td>
+<td>55</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,185 +175,235 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user performs only navigation", "Myntra Cart Functionality"</td>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
-<td>7</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>15</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>14</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search with numbers", "Men Search Functionality"</td>
+<td></td>
+<td>13</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify login popup is displayed", "Myntra Login Functionality"</td>
+<td></td>
+<td>24</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>15</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search with special characters", "Men Search Functionality"</td>
+<td></td>
+<td>15</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can navigate to Topwear", "Myntra Home Page Functionality"</td>
+<td></td>
+<td>36</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>15</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>14</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can navigate to bag", "Myntra Product Page Functionality"</td>
+<td></td>
+<td>37</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify multiple clicks on Add to Bag without size", "Myntra Product Page Functionality"</td>
 <td></td>
 <td>20</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify filter does not break navigation", "Myntra Home Page Functionality"</td>
-<td></td>
-<td>18</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can select size", "Myntra Product Page Functionality"</td>
-<td></td>
-<td>17</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can click place order multiple times", "Myntra Cart Functionality"</td>
-<td></td>
-<td>7</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify system accepts any valid 10 digit number", "Myntra Login Functionality"</td>
-<td></td>
-<td>17</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify system restricts more than 10 digits", "Myntra Login Functionality"</td>
-<td></td>
-<td>15</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify login flow with valid mobile number", "Myntra Login Functionality"</td>
-<td></td>
-<td>11</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify behavior when no size selected", "Myntra Product Page Functionality"</td>
-<td></td>
-<td>19</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Add to Bag without switching tab", "Myntra Product Page Functionality"</td>
-<td></td>
-<td>33</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error for less than 10 digits", "Myntra Login Functionality"</td>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
 <td>14</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify behavior when filter not applied", "Myntra Home Page Functionality"</td>
-<td></td>
-<td>9</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify repeated product click handling", "Myntra Home Page Functionality"</td>
-<td></td>
-<td>11</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error for alphabets in mobile number", "Myntra Login Functionality"</td>
-<td></td>
-<td>19</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user cannot add product without selecting size", "Myntra Product Page Functionality"</td>
-<td></td>
-<td>35</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user refresh and place order", "Myntra Cart Functionality"</td>
-<td></td>
-<td>8</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify size options are available", "Myntra Product Page Functionality"</td>
-<td></td>
-<td>34</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Add to Bag button is clickable", "Myntra Product Page Functionality"</td>
-<td></td>
-<td>17</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error for special characters", "Myntra Login Functionality"</td>
-<td></td>
-<td>15</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can navigate multiple times to Topwear", "Myntra Home Page Functionality"</td>
-<td></td>
-<td>14</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify behavior when mobile number is empty", "Myntra Login Functionality"</td>
-<td></td>
-<td>16</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user performs only refresh", "Myntra Cart Functionality"</td>
-<td></td>
-<td>7</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user tries place order without refresh", "Myntra Cart Functionality"</td>
-<td></td>
-<td>8</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can open product", "Myntra Home Page Functionality"</td>
 <td></td>
-<td>10</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>37</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to place order from cart", "Myntra Cart Functionality"</td>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search with invalid text", "Men Search Functionality"</td>
+<td></td>
+<td>14</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify continue button is visible", "Myntra Login Functionality"</td>
 <td></td>
 <td>13</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify repeated refresh does not break flow", "Myntra Cart Functionality"</td>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify size options are available", "Myntra Product Page Functionality"</td>
 <td></td>
-<td>8</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify place order after multiple navigations", "Myntra Cart Functionality"</td>
-<td></td>
-<td>9</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify products are visible after navigation", "Myntra Home Page Functionality"</td>
-<td></td>
-<td>8</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can navigate to bag", "Myntra Product Page Functionality"</td>
-<td></td>
-<td>50</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
-<tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify place order button is clickable", "Myntra Cart Functionality"</td>
-<td></td>
-<td>7</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>20</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can apply filters", "Myntra Home Page Functionality"</td>
 <td></td>
-<td>13</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>43</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can click Add to Bag", "Myntra Product Page Functionality"</td>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
-<td>35</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>14</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can open product without applying filter", "Myntra Home Page Functionality"</td>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
-<td>9</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>15</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify page loads before placing order", "Myntra Cart Functionality"</td>
 <td></td>
-<td>6</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>36</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can navigate to Topwear", "Myntra Home Page Functionality"</td>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user cannot add product without selecting size", "Myntra Product Page Functionality"</td>
 <td></td>
-<td>7</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>24</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation back to cart and place order", "Myntra Cart Functionality"</td>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify filter does not break navigation", "Myntra Home Page Functionality"</td>
 <td></td>
-<td>7</td>
-<td>com.skillo.runner.Runner@54e041a4</td></tr>
+<td>64</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>13</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user performs only refresh", "Myntra Cart Functionality"</td>
+<td></td>
+<td>42</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify login page is displayed", "Myntra Login Functionality"</td>
+<td></td>
+<td>11</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>15</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>16</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify mobile number input field is visible", "Myntra Login Functionality"</td>
+<td></td>
+<td>11</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can select size", "Myntra Product Page Functionality"</td>
+<td></td>
+<td>18</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can enter mobile number", "Myntra Login Functionality"</td>
+<td></td>
+<td>12</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify repeated product click handling", "Myntra Home Page Functionality"</td>
+<td></td>
+<td>39</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>13</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify place order button is clickable", "Myntra Cart Functionality"</td>
+<td></td>
+<td>46</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>13</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>14</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can navigate multiple times to Topwear", "Myntra Home Page Functionality"</td>
+<td></td>
+<td>61</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify login popup closes when user clicks outside", "Myntra Login Functionality"</td>
+<td></td>
+<td>24</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify login popup persists on page refresh", "Myntra Login Functionality"</td>
+<td></td>
+<td>32</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search suggestions", "Men Search Functionality"</td>
+<td></td>
+<td>10</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>15</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>14</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user performs only navigation", "Myntra Cart Functionality"</td>
+<td></td>
+<td>36</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>13</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can click continue button after entering number", "Myntra Login Functionality"</td>
+<td></td>
+<td>13</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Add to Bag button is visible", "Myntra Product Page Functionality"</td>
+<td></td>
+<td>24</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>13</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 </table><p>
 </body>
 </html>

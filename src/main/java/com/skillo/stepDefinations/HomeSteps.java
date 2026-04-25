@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.skillo.pages.MyntraHomePage;
+import com.skillo.pages.HomePage;
 
 import io.cucumber.java.en.*;
 
@@ -13,149 +13,110 @@ public class HomeSteps {
 
     private static final Logger LOG = LogManager.getLogger(HomeSteps.class);
 
-    private MyntraHomePage homePage;
+    private HomePage homePage;
+
+    // ✅ COMMON INIT (SAFE)
+    private void initHomePage() {
+        if (homePage == null) {
+            homePage = new HomePage();
+            LOG.debug("HomePage initialized inside step");
+        }
+    }
 
     @Given("Browser is opened and home page is launched")
     public void openBrowserAndHomePage() {
 
         LOG.info("STEP: Browser opened and home page launched");
 
-        try {
-            homePage = new MyntraHomePage(); // Driver from Hooks
-            LOG.info("User is on home page successfully");
-        } catch (Exception e) {
-            LOG.error("Failed to initialize home page", e);
-            throw e;
-        }
+        homePage = new HomePage(); // Hooks already opened browser
     }
+
+    // ✅ SINGLE SEARCH STEP (ONLY HERE)
+    @When("user search for the Various {string}")
+    public void searchProduct(String product) {
+
+        LOG.info("STEP: Searching product: {}", product);
+
+        initHomePage();
+
+        homePage.enterTextOnSearchBar(product);
+        homePage.enterPressOnSearchBar();
+    }
+
+    // ✅ SEARCH RESULT VALIDATION (IMPORTANT ADD)
+    @Then("user should see the result for the valid product")
+    public void verify_search_result() {
+
+        initHomePage();
+
+        Assert.assertTrue(
+                homePage.isProductsDisplayed(),
+                "Search results not displayed"
+        );
+    }
+
+    // ================= OTHER STEPS =================
 
     @When("user navigates to Topwear section")
     public void user_navigates_to_topwear() {
-
-        LOG.info("STEP: User navigates to Topwear section");
-
+        initHomePage();
         homePage.navigateToTopwear();
     }
 
     @When("user applies filters")
     public void user_applies_filters() {
-
-        LOG.info("STEP: User applies filters");
-
+        initHomePage();
         homePage.applyFilters();
     }
 
     @When("user opens first product")
     public void user_opens_first_product() {
-
-        LOG.info("STEP: User opens first product");
-
+        initHomePage();
         homePage.openFirstProduct();
     }
 
-    // Reusable step
     @When("user navigates again to Topwear section")
     public void user_navigates_again_to_topwear() {
-
-        LOG.info("STEP: User navigates again to Topwear section");
-
+        initHomePage();
         homePage.navigateToTopwear();
-        LOG.debug("Repeated navigation to Topwear executed");
     }
 
-    // Reusable step
     @When("user opens first product again")
     public void user_opens_product_again() {
-
-        LOG.info("STEP: User opens first product again");
-
+        initHomePage();
         homePage.openFirstProduct();
-        LOG.debug("Repeated product open executed");
     }
 
-    // Reusable step
     @When("user applies filters again")
     public void user_applies_filters_again() {
-
-        LOG.info("STEP: User applies filters again");
-
+        initHomePage();
         homePage.applyFilters();
-        LOG.debug("Repeated filter application executed");
     }
 
     @Then("Topwear page should be displayed")
     public void verify_topwear_page() {
-
-        LOG.info("STEP: Verifying Topwear page is displayed");
-
-        try {
-            boolean result = homePage.isTopwearPageDisplayed();
-            LOG.debug("Topwear page validation result: {}", result);
-
-            Assert.assertTrue(result, "Topwear page not displayed");
-
-            LOG.info("Topwear page verified successfully");
-
-        } catch (AssertionError e) {
-            LOG.error("Topwear page validation failed", e);
-            throw e;
-        }
+        initHomePage();
+        Assert.assertTrue(homePage.isTopwearPageDisplayed(),
+                "Topwear page not displayed");
     }
 
     @Then("filtered products should be displayed")
     public void verify_filtered_products() {
-
-        LOG.info("STEP: Verifying filtered products are displayed");
-
-        try {
-            boolean result = homePage.isProductsDisplayed();
-            LOG.debug("Filtered products visible: {}", result);
-
-            Assert.assertTrue(result, "Filtered products not displayed");
-
-            LOG.info("Filtered products are visible");
-
-        } catch (AssertionError e) {
-            LOG.error("Filtered products validation failed", e);
-            throw e;
-        }
+        initHomePage();
+        Assert.assertTrue(homePage.isProductsDisplayed(),
+                "Filtered products not displayed");
     }
 
     @Then("product page should be displayed")
     public void verify_product_page() {
-
-        LOG.info("STEP: Verifying product page is displayed");
-
-        try {
-            boolean result = homePage.isProductPageDisplayed();
-            LOG.debug("Product page displayed: {}", result);
-
-            Assert.assertTrue(result, "Product page not opened");
-
-            LOG.info("Product page opened successfully");
-
-        } catch (AssertionError e) {
-            LOG.error("Product page validation failed", e);
-            throw e;
-        }
+        initHomePage();
+        Assert.assertTrue(homePage.isProductPageDisplayed(),
+                "Product page not opened");
     }
 
     @Then("products should still be visible")
-    public void verify_products_visible() {
+    public void products_should_be_visible() {
 
-        LOG.info("STEP: Verifying products are still visible");
-
-        try {
-            boolean result = homePage.isProductsDisplayed();
-            LOG.debug("Products visibility status: {}", result);
-
-            Assert.assertTrue(result, "Products not visible");
-
-            LOG.info("Products are visible");
-
-        } catch (AssertionError e) {
-            LOG.error("Products visibility validation failed", e);
-            throw e;
-        }
+        Assert.assertTrue(false, "❌ Intentional Failure: Products not visible");
     }
 }

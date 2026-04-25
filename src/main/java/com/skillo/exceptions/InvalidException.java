@@ -2,7 +2,7 @@ package com.skillo.exceptions;
 
 public class InvalidException extends RuntimeException {
 
-	private String browerName;
+	private String browerName;  
 
 	public InvalidException(String browerName) {
 		this.browerName = browerName;

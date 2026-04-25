@@ -1,14 +1,14 @@
-<suite name="MyntraSuite" parallel="tests" thread-count="3">
+<suite name="MyntraSuite">
 
-    <test name="ChromeTest1">
+    <test name="Myntra-All-Tests">
         <classes>
-            <class name="com.example.demo.MyntraLoginTest"/>
-        </classes>
-    </test>
 
-    <test name="ChromeTest2">
-        <classes>
-            <class name="com.example.demo.MyntraLoginTest"/>
+            <class name="com.skillo.tests.HomePageTest"/>
+            <class name="com.skillo.tests.ProductListingTest"/>
+            <class name="com.skillo.tests.ProductDetailsTest"/>
+            <class name="com.skillo.tests.CartPageTest"/>
+            <class name="com.skillo.tests.LoginPageTest"/>
+
         </classes>
     </test>
 

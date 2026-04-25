@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>TestNG:  Myntra-All-Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Myntra-All-Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Apr 24 08:34:22 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>812 seconds (812824 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.skillo.tests.LoginPageTest.verifyContinueButtonVisible()'><b>verifyContinueButtonVisible</b><br>Test class: com.skillo.tests.LoginPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.skillo.tests.LoginPageTest@5167f57d</td></tr>
+<tr>
+<td title='com.skillo.tests.HomePageTest.verifyProductsVisibleAfterNavigation()'><b>verifyProductsVisibleAfterNavigation</b><br>Test class: com.skillo.tests.HomePageTest</td>
+<td></td>
+<td>24</td>
+<td>com.skillo.tests.HomePageTest@2584b82d</td></tr>
+<tr>
+<td title='com.skillo.tests.HomePageTest.verifyApplyFilters()'><b>verifyApplyFilters</b><br>Test class: com.skillo.tests.HomePageTest</td>
+<td></td>
+<td>28</td>
+<td>com.skillo.tests.HomePageTest@2584b82d</td></tr>
+<tr>
+<td title='com.skillo.tests.LoginPageTest.verifyMobileInputVisible()'><b>verifyMobileInputVisible</b><br>Test class: com.skillo.tests.LoginPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.skillo.tests.LoginPageTest@5167f57d</td></tr>
+<tr>
+<td title='com.skillo.tests.CartPageTest.verifyOnlyNavigation()'><b>verifyOnlyNavigation</b><br>Test class: com.skillo.tests.CartPageTest</td>
+<td></td>
+<td>20</td>
+<td>com.skillo.tests.CartPageTest@24105dc5</td></tr>
+<tr>
+<td title='com.skillo.tests.LoginPageTest.verifyEnterMobileNumber()'><b>verifyEnterMobileNumber</b><br>Test class: com.skillo.tests.LoginPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.skillo.tests.LoginPageTest@5167f57d</td></tr>
+<tr>
+<td title='com.skillo.tests.HomePageTest.verifyNavigateToTopwear()'><b>verifyNavigateToTopwear</b><br>Test class: com.skillo.tests.HomePageTest</td>
+<td></td>
+<td>23</td>
+<td>com.skillo.tests.HomePageTest@2584b82d</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductDetailsTest.verifyProductPageLoaded()'><b>verifyProductPageLoaded</b><br>Test class: com.skillo.tests.ProductDetailsTest</td>
+<td></td>
+<td>27</td>
+<td>com.skillo.tests.ProductDetailsTest@2438dcd</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductDetailsTest.verifyAddToBagWithoutSize()'><b>verifyAddToBagWithoutSize</b><br>Test class: com.skillo.tests.ProductDetailsTest</td>
+<td></td>
+<td>26</td>
+<td>com.skillo.tests.ProductDetailsTest@2438dcd</td></tr>
+<tr>
+<td title='com.skillo.tests.HomePageTest.verifyRepeatedProductClickHandling()'><b>verifyRepeatedProductClickHandling</b><br>Test class: com.skillo.tests.HomePageTest</td>
+<td></td>
+<td>26</td>
+<td>com.skillo.tests.HomePageTest@2584b82d</td></tr>
+<tr>
+<td title='com.skillo.tests.CartPageTest.verifyCartPageLoaded()'><b>verifyCartPageLoaded</b><br>Test class: com.skillo.tests.CartPageTest</td>
+<td></td>
+<td>19</td>
+<td>com.skillo.tests.CartPageTest@24105dc5</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductListingTest.verifyProductListingDisplayed()'><b>verifyProductListingDisplayed</b><br>Test class: com.skillo.tests.ProductListingTest</td>
+<td></td>
+<td>24</td>
+<td>com.skillo.tests.ProductListingTest@15d49048</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductListingTest.verifyMultipleProductClicks()'><b>verifyMultipleProductClicks</b><br>Test class: com.skillo.tests.ProductListingTest</td>
+<td></td>
+<td>24</td>
+<td>com.skillo.tests.ProductListingTest@15d49048</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductDetailsTest.verifyMultipleAddToBagWithoutSize()'><b>verifyMultipleAddToBagWithoutSize</b><br>Test class: com.skillo.tests.ProductDetailsTest</td>
+<td></td>
+<td>26</td>
+<td>com.skillo.tests.ProductDetailsTest@2438dcd</td></tr>
+<tr>
+<td title='com.skillo.tests.LoginPageTest.verifyContinueAfterValidNumber()'><b>verifyContinueAfterValidNumber</b><br>Test class: com.skillo.tests.LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.skillo.tests.LoginPageTest@5167f57d</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductDetailsTest.verifySelectSize()'><b>verifySelectSize</b><br>Test class: com.skillo.tests.ProductDetailsTest</td>
+<td></td>
+<td>28</td>
+<td>com.skillo.tests.ProductDetailsTest@2438dcd</td></tr>
+<tr>
+<td title='com.skillo.tests.LoginPageTest.verifyLoginPageDisplayed()'><b>verifyLoginPageDisplayed</b><br>Test class: com.skillo.tests.LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.skillo.tests.LoginPageTest@5167f57d</td></tr>
+<tr>
+<td title='com.skillo.tests.LoginPageTest.verifyContinueWithoutMobileNumber()'><b>verifyContinueWithoutMobileNumber</b><br>Test class: com.skillo.tests.LoginPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.skillo.tests.LoginPageTest@5167f57d</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductDetailsTest.verifyAddToBagButtonVisible()'><b>verifyAddToBagButtonVisible</b><br>Test class: com.skillo.tests.ProductDetailsTest</td>
+<td></td>
+<td>28</td>
+<td>com.skillo.tests.ProductDetailsTest@2438dcd</td></tr>
+<tr>
+<td title='com.skillo.tests.HomePageTest.verifyFilterDoesNotBreakNavigation()'><b>verifyFilterDoesNotBreakNavigation</b><br>Test class: com.skillo.tests.HomePageTest</td>
+<td></td>
+<td>55</td>
+<td>com.skillo.tests.HomePageTest@2584b82d</td></tr>
+<tr>
+<td title='com.skillo.tests.CartPageTest.verifyOnlyRefresh()'><b>verifyOnlyRefresh</b><br>Test class: com.skillo.tests.CartPageTest</td>
+<td></td>
+<td>19</td>
+<td>com.skillo.tests.CartPageTest@24105dc5</td></tr>
+<tr>
+<td title='com.skillo.tests.HomePageTest.verifyOpenProduct()'><b>verifyOpenProduct</b><br>Test class: com.skillo.tests.HomePageTest</td>
+<td></td>
+<td>24</td>
+<td>com.skillo.tests.HomePageTest@2584b82d</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductListingTest.verifyClickProduct()'><b>verifyClickProduct</b><br>Test class: com.skillo.tests.ProductListingTest</td>
+<td></td>
+<td>24</td>
+<td>com.skillo.tests.ProductListingTest@15d49048</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductDetailsTest.verifySizeOptionsAvailable()'><b>verifySizeOptionsAvailable</b><br>Test class: com.skillo.tests.ProductDetailsTest</td>
+<td></td>
+<td>29</td>
+<td>com.skillo.tests.ProductDetailsTest@2438dcd</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductDetailsTest.verifyGoToBag()'><b>verifyGoToBag</b><br>Test class: com.skillo.tests.ProductDetailsTest</td>
+<td></td>
+<td>46</td>
+<td>com.skillo.tests.ProductDetailsTest@2438dcd</td></tr>
+<tr>
+<td title='com.skillo.tests.HomePageTest.verifyMultipleNavigationToTopwear()'><b>verifyMultipleNavigationToTopwear</b><br>Test class: com.skillo.tests.HomePageTest</td>
+<td></td>
+<td>47</td>
+<td>com.skillo.tests.HomePageTest@2584b82d</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductListingTest.verifySwitchToChildWindow()'><b>verifySwitchToChildWindow</b><br>Test class: com.skillo.tests.ProductListingTest</td>
+<td></td>
+<td>27</td>
+<td>com.skillo.tests.ProductListingTest@15d49048</td></tr>
+<tr>
+<td title='com.skillo.tests.ProductListingTest.verifyListingPageReload()'><b>verifyListingPageReload</b><br>Test class: com.skillo.tests.ProductListingTest</td>
+<td></td>
+<td>26</td>
+<td>com.skillo.tests.ProductListingTest@15d49048</td></tr>
+<tr>
+<td title='com.skillo.tests.LoginPageTest.verifyPopupClosesOnOutsideClick()'><b>verifyPopupClosesOnOutsideClick</b><br>Test class: com.skillo.tests.LoginPageTest</td>
+<td></td>
+<td>13</td>
+<td>com.skillo.tests.LoginPageTest@5167f57d</td></tr>
+</table><p>
+</body>
+</html>

@@ -6,13 +6,13 @@ import com.skillo.utils.ExcelReader;
 public class MenDataProvider {
 
 
-	@DataProvider(name="brandData")
-	public static Object[][] readExcelOfLip_Brands() throws IOException {
+	@DataProvider(name="brandDataTshirt")
+	public static Object[][] readExcelOfTshirt_Brands() throws IOException {
 		return ExcelReader.readExcel(0);
 	
 	}
 	
-	@DataProvider(name="pincodeData")
+	@DataProvider(name="pincodeDataTshirt")
 	public static Object[][] readExcelOfPincodes() throws IOException {
 		return ExcelReader.readExcel(1);
 	}

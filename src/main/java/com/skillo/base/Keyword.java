@@ -1,10 +1,17 @@
 package com.skillo.base;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.util.Date;
+
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -15,119 +22,103 @@ import com.skillo.exceptions.InvalidException;
 
 public class Keyword {
 
-    // Logger
     private static final Logger LOG = LogManager.getLogger(Keyword.class);
 
-    // ThreadLocal Driver
-    private static ThreadLocal<RemoteWebDriver> threadDriver = new ThreadLocal<>();
+    public static RemoteWebDriver driver;
 
-    // Getter
     public static RemoteWebDriver getDriver() {
-        return threadDriver.get();
+        return driver;
     }
 
-    // Setter
-    public static void setDriver(RemoteWebDriver driver) {
-        threadDriver.set(driver);
-        LOG.info("Driver set successfully for thread: {}", Thread.currentThread().getId());
-    }
+    // ================= BROWSER =================
 
-    // Remove driver after test
-    public static void unload() {
-        LOG.info("Removing driver for thread: {}", Thread.currentThread().getId());
-        threadDriver.remove();
-    }
-
-    // Open Browser
     public static void openBrowser(String browserName) {
 
         LOG.info("Opening browser: {}", browserName);
 
-        RemoteWebDriver driver;
-
-        if (browserName.equalsIgnoreCase("Chrome")) {
+        if (browserName.equalsIgnoreCase("chrome")) {
 
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-notifications");
-
-            options.addArguments(
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                            + "AppleWebKit/537.36 (KHTML, like Gecko) "
-                            + "Chrome/120.0.0.0 Safari/537.36");
-
-            //options.addArguments("--start-maximized");
+            options.addArguments("--start-maximized");
 
             driver = new ChromeDriver(options);
-            LOG.info("Chrome browser launched successfully");
 
-        } else if (browserName.equalsIgnoreCase("Firefox")) {
+        } else if (browserName.equalsIgnoreCase("firefox")) {
 
-            driver = new FirefoxDriver();
-            LOG.info("Firefox browser launched successfully");
+            driver = new FirefoxDriver(new FirefoxOptions());
 
-        } else if (browserName.equalsIgnoreCase("Safari")) {
+        } else if (browserName.equalsIgnoreCase("safari")) {
 
             driver = new SafariDriver();
-            LOG.info("Safari browser launched successfully");
 
         } else {
-            LOG.error("Invalid browser provided: {}", browserName);
             throw new InvalidException(browserName);
         }
 
-        setDriver(driver);
-        getDriver().manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    // Launch URL
     public static void launchUrl(String url) {
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+        driver.get(url);
+    }
 
-        LOG.info("Launching URL: {}", url);
-
-        try {
-            getDriver().get(url);
-            LOG.info("Successfully launched URL: {}", url);
-        } catch (Exception e) {
-            LOG.error("Failed to launch URL: {}", url, e);
-            throw e;
+    public static void closeBrowser() {
+        if (driver != null) {
+            driver.quit();
+            LOG.info("Browser closed successfully");
         }
     }
 
-    // Find Element
-    public static WebElement getElement(String locatorType, String locatorValue) {
+    // ================= SCREENSHOT =================
 
-        LOG.debug("Finding element using {} = {}", locatorType, locatorValue);
+    public static byte[] takeScreenshot(String scenarioName, String status) {
 
         try {
+            String folderPath = System.getProperty("user.dir") + "/screenshots/" + status;
 
-            WebElement element;
-
-            if (locatorType.equalsIgnoreCase("id")) {
-                element = getDriver().findElement(By.id(locatorValue));
-
-            } else if (locatorType.equalsIgnoreCase("name")) {
-                element = getDriver().findElement(By.name(locatorValue));
-
-            } else if (locatorType.equalsIgnoreCase("xpath")) {
-                element = getDriver().findElement(By.xpath(locatorValue));
-
-            } else if (locatorType.equalsIgnoreCase("cssSelector")) {
-                element = getDriver().findElement(By.cssSelector(locatorValue));
-
-            } else if (locatorType.equalsIgnoreCase("className")) {
-                element = getDriver().findElement(By.className(locatorValue));
-
-            } else {
-                LOG.error("Invalid locator type: {}", locatorType);
-                throw new InvalidException(locatorType);
+            File folder = new File(folderPath);
+            if (!folder.exists()) {
+                folder.mkdirs(); // auto create
             }
 
-            LOG.info("Element found successfully: {} = {}", locatorType, locatorValue);
-            return element;
+            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-        } catch (Exception e) {
-            LOG.error("Failed to find element: {} = {}", locatorType, locatorValue, e);
-            throw e;
+            String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+            String fileName = scenarioName.replaceAll(" ", "_") + "_" + timeStamp + ".png";
+
+            File dest = new File(folderPath + "/" + fileName);
+
+            Files.copy(src.toPath(), dest.toPath());
+
+            LOG.info("Screenshot saved at: {}", dest.getAbsolutePath());
+
+            return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
+        } catch (IOException e) {
+            LOG.error("Screenshot failed", e);
+            return null;
+        }
+    }
+
+    // ================= ELEMENT =================
+
+    public static WebElement getElement(String locatorType, String locatorValue) {
+
+        switch (locatorType.toLowerCase()) {
+            case "id":
+                return driver.findElement(By.id(locatorValue));
+            case "name":
+                return driver.findElement(By.name(locatorValue));
+            case "xpath":
+                return driver.findElement(By.xpath(locatorValue));
+            case "cssselector":
+                return driver.findElement(By.cssSelector(locatorValue));
+            case "classname":
+                return driver.findElement(By.className(locatorValue));
+            default:
+                throw new InvalidException(locatorType);
         }
     }
 }
