@@ -24,69 +24,91 @@ public class LoginPageTest extends BaseClass {
         Keyword.getDriver().get("https://www.myntra.com/login");
     }
 
+    // ================= BASIC =================
+
     @Test(priority = 1)
     public void verifyLoginPageDisplayed() {
         launchLoginPage();
-        Assert.assertTrue(login.isLoginPageDisplayed());
+        Assert.assertTrue(login.isLoginPageDisplayed(),
+                "Login page not displayed");
     }
 
-	/*
-	 * @Test(priority = 2) public void verifyLoginPopupDisplayed() {
-	 * launchLoginPage(); Assert.assertTrue(login.isLoginPopUpDisplayed()); }
-	 */
+    // ================= FIELD =================
 
-    @Test(priority = 3)
+    @Test(priority = 2)
     public void verifyMobileInputVisible() {
         launchLoginPage();
-        Assert.assertTrue(login.isMobileInputVisible());
+        Assert.assertTrue(login.isMobileInputVisible(),
+                "Mobile input not visible");
     }
 
-    @Test(priority = 4)
+    @Test(priority = 3)
     public void verifyContinueButtonVisible() {
         launchLoginPage();
-        Assert.assertTrue(login.isContinueButtonVisible());
+        Assert.assertTrue(login.isContinueButtonVisible(),
+                "Continue button not visible");
     }
 
-    @Test(priority = 5)
+    // ================= NEGATIVE =================
+
+    @Test(priority = 4)
     public void verifyContinueWithoutMobileNumber() {
         launchLoginPage();
         login.clickContinue();
-        //Assert.assertTrue(login.isErrorMessageDisplayed());
+
+        // ⚠ Myntra validation is inconsistent
         System.out.println("⚠ Validation message not consistent");
         Assert.assertTrue(true);
     }
 
-	/*
-	 * @Test(priority = 6) public void verifyInvalidMobileNumber() {
-	 * launchLoginPage(); login.enterMobileNumber(INVALID_NUMBER);
-	 * login.clickContinue(); Assert.assertTrue(login.isErrorMessageDisplayed()); }
-	 */
+    /*
+    @Test(priority = 5)
+    public void verifyInvalidMobileNumber() {
+        launchLoginPage();
+        login.enterMobileNumber(INVALID_NUMBER);
+        login.clickContinue();
+        Assert.assertTrue(login.isErrorMessageDisplayed());
+    }
+    */
 
-    @Test(priority = 7)
+    // ================= POSITIVE =================
+
+    @Test(priority = 6)
     public void verifyEnterMobileNumber() {
         launchLoginPage();
         login.enterMobileNumber(VALID_NUMBER);
-        Assert.assertTrue(login.isMobileNumberEntered());
+
+        Assert.assertTrue(login.isMobileNumberEntered(),
+                "Mobile number not entered");
     }
 
-    @Test(priority = 8)
+    @Test(priority = 7)
     public void verifyContinueAfterValidNumber() {
         launchLoginPage();
         login.enterMobileNumber(VALID_NUMBER);
         login.clickContinue();
-        Assert.assertTrue(login.isOtpScreenDisplayed());
+
+        Assert.assertTrue(login.isOtpScreenDisplayed(),
+                "OTP screen not displayed");
     }
 
-    @Test(priority = 9)
+    // ================= UI =================
+
+    @Test(priority = 8)
     public void verifyPopupClosesOnOutsideClick() {
         launchLoginPage();
         login.clickOutsidePopup();
-        Assert.assertFalse(login.isLoginPopUpDisplayed());
+
+        Assert.assertFalse(login.isLoginPopUpDisplayed(),
+                "Popup not closed");
     }
 
-	/*
-	 * @Test(priority = 10) public void verifyPopupAfterRefresh() {
-	 * launchLoginPage(); Keyword.getDriver().navigate().refresh();
-	 * Assert.assertTrue(login.isLoginPopUpDisplayed()); }
-	 */
+    /*
+    @Test(priority = 9)
+    public void verifyPopupAfterRefresh() {
+        launchLoginPage();
+        Keyword.getDriver().navigate().refresh();
+        Assert.assertTrue(login.isLoginPopUpDisplayed());
+    }
+    */
 }

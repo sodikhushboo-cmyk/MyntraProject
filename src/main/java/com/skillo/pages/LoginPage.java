@@ -48,7 +48,7 @@ public class LoginPage {
         try {
             Waits.waitForVisibility(loginPage); // ensure page
 
-            Thread.sleep(2000); // 🔥 Myntra popup delay
+            Thread.sleep(2000); // Myntra popup delay
 
             return wishListLoginPopUp.isDisplayed();
 
@@ -100,7 +100,6 @@ public class LoginPage {
     }
 
     public void clickOutsidePopup() {
-        // More reliable than ESC
         mobileInput.click();
         mobileInput.sendKeys(Keys.TAB);
     }

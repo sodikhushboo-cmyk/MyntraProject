@@ -55,11 +55,19 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
+<<<<<<< HEAD
 <td>Tests passed/Failed/Skipped:</td><td>46/5/0</td>
 </tr><tr>
 <td>Started on:</td><td>Fri Apr 24 13:10:19 IST 2026</td>
 </tr>
 <tr><td>Total time:</td><td>1292 seconds (1292127 ms)</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>46/9/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 23 03:20:59 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>927 seconds (927407 ms)</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +84,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify products are visible after navigation", "Myntra Home Page Functionality"</td>
 <td><div><pre>java.lang.AssertionError: ❌ Intentional Failure: Products not visible expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
@@ -164,6 +173,880 @@ function toggleAllBoxes() {
 	at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/Cart.feature:17)
 </pre></div></td>
 <td>55</td>
+=======
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify login popup is displayed", "Myntra Login Functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.skillo.stepDefinations.LoginSteps.verify_login_popup(LoginSteps.java:31)
+	at ✽.user should see login popup(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/login.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace542263318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace542263318'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.skillo.stepDefinations.LoginSteps.verify_login_popup(LoginSteps.java:31)
+	at ✽.user should see login popup(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/login.feature:9)
+</pre></div></td>
+<td>29</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search with special characters", "Men Search Functionality"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user enters special character to search product &quot;@#$%^&amp;*()&quot;&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user enters special character to search product {string}&quot;)
+public void user_enters_special_character_to_search_product(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user cannot find the men products&quot;)
+public void user_cannot_find_the_men_products() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1317395634", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1317395634'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user enters special character to search product &quot;@#$%^&amp;*()&quot;&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user enters special character to search product {string}&quot;)
+public void user_enters_special_character_to_search_product(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user cannot find the men products&quot;)
+public void user_cannot_find_the_men_products() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search suggestions", "Men Search Functionality"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user enters some keyword to search &quot;Shirt&quot;&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user enters some keyword to search {string}&quot;)
+public void user_enters_some_keyword_to_search(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user should see the autosuggestions&quot;)
+public void user_should_see_the_autosuggestions() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1376533963", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1376533963'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user enters some keyword to search &quot;Shirt&quot;&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user enters some keyword to search {string}&quot;)
+public void user_enters_some_keyword_to_search(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user should see the autosuggestions&quot;)
+public void user_should_see_the_autosuggestions() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search with numbers", "Men Search Functionality"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user enters numbers to search products &quot;48964596186&quot;&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user enters numbers to search products {string}&quot;)
+public void user_enters_numbers_to_search_products(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user cannot find any matches&quot;)
+public void user_cannot_find_any_matches() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace745764314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace745764314'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user enters numbers to search products &quot;48964596186&quot;&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user enters numbers to search products {string}&quot;)
+public void user_enters_numbers_to_search_products(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user cannot find any matches&quot;)
+public void user_cannot_find_any_matches() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify orders without login", "Men Search Functionality"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user click on orders List without login&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user click on orders List without login&quot;)
+public void user_click_on_orders_list_without_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user should redirected on the login page&quot;)
+public void user_should_redirected_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace594169136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace594169136'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user click on orders List without login&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user click on orders List without login&quot;)
+public void user_click_on_orders_list_without_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user should redirected on the login page&quot;)
+public void user_should_redirected_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify wishlist without login", "Men Search Functionality"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user click on wishlist icon without login&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user click on wishlist icon without login&quot;)
+public void user_click_on_wishlist_icon_without_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user should redirected on the login page&quot;)
+public void user_should_redirected_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace894735295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace894735295'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user click on wishlist icon without login&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user click on wishlist icon without login&quot;)
+public void user_click_on_wishlist_icon_without_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user should redirected on the login page&quot;)
+public void user_should_redirected_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Add to Bag without switching tab", "Myntra Product Page Functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;ADD TO BAG&apos;)]&quot;}
+  (Session info: chrome=147.0.7727.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4397c02e43f121f2d95424e84eb99d81, findElement {value=//div[contains(text(),&apos;ADD TO BAG&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\SIMRAN~1.GUJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65065}, goog:processID: 12676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65065/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4397c02e43f121f2d95424e84eb99d81
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy41.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:461)
+	at com.skillo.utils.Waits.safeClick(Waits.java:141)
+	at com.skillo.pages.ProductDetails.addToBagWithoutSize(ProductDetails.java:73)
+	at com.skillo.stepDefinations.ProductSteps.add_without_size(ProductSteps.java:55)
+	at ✽.user clicks on Add to Bag without selecting size(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/product.feature:43)
+</pre></div><a href='#' onClick='toggleBox("stack-trace711248671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace711248671'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;ADD TO BAG&apos;)]&quot;}
+  (Session info: chrome=147.0.7727.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4397c02e43f121f2d95424e84eb99d81, findElement {value=//div[contains(text(),&apos;ADD TO BAG&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\SIMRAN~1.GUJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65065}, goog:processID: 12676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65065/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4397c02e43f121f2d95424e84eb99d81
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy41.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:461)
+	at com.skillo.utils.Waits.safeClick(Waits.java:141)
+	at com.skillo.pages.ProductDetails.addToBagWithoutSize(ProductDetails.java:73)
+	at com.skillo.stepDefinations.ProductSteps.add_without_size(ProductSteps.java:55)
+	at ✽.user clicks on Add to Bag without selecting size(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/product.feature:43)
+</pre></div></td>
+<td>67</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search with invalid text", "Men Search Functionality"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user enters giberish text to search product &quot;xyzabc99999nonsense&quot;&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user enters giberish text to search product {string}&quot;)
+public void user_enters_giberish_text_to_search_product(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user cannot see men product&quot;)
+public void user_cannot_see_men_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1484177113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1484177113'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user enters giberish text to search product &quot;xyzabc99999nonsense&quot;&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;user enters giberish text to search product {string}&quot;)
+public void user_enters_giberish_text_to_search_product(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user cannot see men product&quot;)
+public void user_cannot_see_men_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can navigate to bag", "Myntra Product Page Functionality"</td>
+<td><div><pre>java.lang.RuntimeException: Go To Bag button not found
+	at com.skillo.pages.ProductDetails.goToBag(ProductDetails.java:89)
+	at com.skillo.stepDefinations.ProductSteps.go_to_bag(ProductSteps.java:50)
+	at ✽.user clicks on go to bag(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/product.feature:35)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@class,&apos;goToCart&apos;)]&quot;}
+  (Session info: chrome=147.0.7727.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8c2468f8c362f4f0e50a4216e8a15afe, findElement {value=//a[contains(@class,&apos;goToCart&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\SIMRAN~1.GUJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65431}, goog:processID: 21200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65431/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c2468f8c362f4f0e50a4216e8a15afe
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.skillo.utils.Waits.safeClick(Waits.java:107)
+	at com.skillo.pages.ProductDetails.goToBag(ProductDetails.java:86)
+	at com.skillo.stepDefinations.ProductSteps.go_to_bag(ProductSteps.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace8733802", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8733802'><pre>java.lang.RuntimeException: Go To Bag button not found
+	at com.skillo.pages.ProductDetails.goToBag(ProductDetails.java:89)
+	at com.skillo.stepDefinations.ProductSteps.go_to_bag(ProductSteps.java:50)
+	at ✽.user clicks on go to bag(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/product.feature:35)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@class,&apos;goToCart&apos;)]&quot;}
+  (Session info: chrome=147.0.7727.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8c2468f8c362f4f0e50a4216e8a15afe, findElement {value=//a[contains(@class,&apos;goToCart&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\SIMRAN~1.GUJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65431}, goog:processID: 21200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65431/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c2468f8c362f4f0e50a4216e8a15afe
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.skillo.utils.Waits.safeClick(Waits.java:107)
+	at com.skillo.pages.ProductDetails.goToBag(ProductDetails.java:86)
+	at com.skillo.stepDefinations.ProductSteps.go_to_bag(ProductSteps.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>53</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -177,6 +1060,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
+<<<<<<< HEAD
 <td>15</td>
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
@@ -233,10 +1117,24 @@ function toggleAllBoxes() {
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
 <td>14</td>
+=======
+<td>6</td>
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
-<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can open product", "Myntra Home Page Functionality"</td>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can select size", "Myntra Product Page Functionality"</td>
 <td></td>
+<td>11</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user tries place order without refresh", "Myntra Cart Functionality"</td>
+<td></td>
+<td>27</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can navigate to Topwear", "Myntra Home Page Functionality"</td>
+<td></td>
+<<<<<<< HEAD
 <td>37</td>
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
@@ -258,10 +1156,24 @@ function toggleAllBoxes() {
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can apply filters", "Myntra Home Page Functionality"</td>
 <td></td>
 <td>43</td>
+=======
+<td>29</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify repeated product click handling", "Myntra Home Page Functionality"</td>
+<td></td>
+<td>27</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user performs only navigation", "Myntra Cart Functionality"</td>
+<td></td>
+<td>7</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
+<<<<<<< HEAD
 <td>14</td>
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
@@ -273,25 +1185,87 @@ function toggleAllBoxes() {
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify page loads before placing order", "Myntra Cart Functionality"</td>
 <td></td>
 <td>36</td>
+=======
+<td>7</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user cannot add product without selecting size", "Myntra Product Page Functionality"</td>
 <td></td>
+<<<<<<< HEAD
 <td>24</td>
+=======
+<td>9</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify page loads before placing order", "Myntra Cart Functionality"</td>
+<td></td>
+<td>8</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify size options are available", "Myntra Product Page Functionality"</td>
+<td></td>
+<td>10</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>7</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify login page is displayed", "Myntra Login Functionality"</td>
+<td></td>
+<td>7</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>6</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user refresh and place order", "Myntra Cart Functionality"</td>
+<td></td>
+<td>27</td>
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify filter does not break navigation", "Myntra Home Page Functionality"</td>
 <td></td>
+<td>53</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>7</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify place order button is clickable", "Myntra Cart Functionality"</td>
+<td></td>
+<td>7</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify filter does not break navigation", "Myntra Home Page Functionality"</td>
+<td></td>
+<<<<<<< HEAD
 <td>64</td>
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
 <td>13</td>
+=======
+<td>26</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify repeated refresh does not break flow", "Myntra Cart Functionality"</td>
+<td></td>
+<td>7</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user performs only refresh", "Myntra Cart Functionality"</td>
 <td></td>
+<<<<<<< HEAD
 <td>42</td>
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
@@ -366,27 +1340,82 @@ function toggleAllBoxes() {
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search suggestions", "Men Search Functionality"</td>
+=======
+<td>7</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Add to Bag button is clickable", "Myntra Product Page Functionality"</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
 <td></td>
 <td>10</td>
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
+<<<<<<< HEAD
 <td>15</td>
+=======
+<td>7</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
+<<<<<<< HEAD
 <td>14</td>
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user performs only navigation", "Myntra Cart Functionality"</td>
 <td></td>
 <td>36</td>
+=======
+<td>7</td>
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
+<td>6</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>7</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can open product without applying filter", "Myntra Home Page Functionality"</td>
+<td></td>
+<td>27</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can open product", "Myntra Home Page Functionality"</td>
+<td></td>
+<td>28</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify multiple clicks on Add to Bag without size", "Myntra Product Page Functionality"</td>
+<td></td>
+<td>14</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>7</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can click place order multiple times", "Myntra Cart Functionality"</td>
+<td></td>
+<td>46</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify products are visible after navigation", "Myntra Home Page Functionality"</td>
+<td></td>
+<td>27</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<<<<<<< HEAD
 <td>13</td>
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
@@ -398,11 +1427,83 @@ function toggleAllBoxes() {
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Add to Bag button is visible", "Myntra Product Page Functionality"</td>
 <td></td>
 <td>24</td>
+=======
+<td>7</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can click Add to Bag", "Myntra Product Page Functionality"</td>
+<td></td>
+<td>14</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 <tr>
 <td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
 <td></td>
+<<<<<<< HEAD
 <td>13</td>
+=======
+<td>6</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify behavior when no size selected", "Myntra Product Page Functionality"</td>
+<td></td>
+<td>9</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify place order after multiple navigations", "Myntra Cart Functionality"</td>
+<td></td>
+<td>27</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can apply filters", "Myntra Home Page Functionality"</td>
+<td></td>
+<td>32</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>7</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>7</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify behavior when filter not applied", "Myntra Home Page Functionality"</td>
+<td></td>
+<td>29</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>9</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to place order from cart", "Myntra Cart Functionality"</td>
+<td></td>
+<td>27</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>6</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>7</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid men products", "Men Search Functionality"</td>
+<td></td>
+<td>7</td>
+<td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
+<tr>
+<td title='com.skillo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.skillo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can navigate multiple times to Topwear", "Myntra Home Page Functionality"</td>
+<td></td>
+<td>50</td>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
 <td>com.skillo.runner.Runner@7f2cfe3f</td></tr>
 </table><p>
 </body>

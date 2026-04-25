@@ -24,6 +24,7 @@ public class Keyword {
 
     private static final Logger LOG = LogManager.getLogger(Keyword.class);
 
+    // ✅ Single Driver Instance
     public static RemoteWebDriver driver;
 
     public static RemoteWebDriver getDriver() {
@@ -46,7 +47,8 @@ public class Keyword {
 
         } else if (browserName.equalsIgnoreCase("firefox")) {
 
-            driver = new FirefoxDriver(new FirefoxOptions());
+            FirefoxOptions options = new FirefoxOptions();
+            driver = new FirefoxDriver(options);
 
         } else if (browserName.equalsIgnoreCase("safari")) {
 
@@ -56,13 +58,23 @@ public class Keyword {
             throw new InvalidException(browserName);
         }
 
+        // ✅ Stable implicit wait
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
+    // ================= URL =================
+
     public static void launchUrl(String url) {
+
+        LOG.info("Launching URL: {}", url);
+
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.get(url);
+
+        LOG.info("URL launched successfully");
     }
+
+    // ================= CLOSE =================
 
     public static void closeBrowser() {
         if (driver != null) {
@@ -80,7 +92,7 @@ public class Keyword {
 
             File folder = new File(folderPath);
             if (!folder.exists()) {
-                folder.mkdirs(); // auto create
+                folder.mkdirs();
             }
 
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -107,16 +119,22 @@ public class Keyword {
     public static WebElement getElement(String locatorType, String locatorValue) {
 
         switch (locatorType.toLowerCase()) {
+
             case "id":
                 return driver.findElement(By.id(locatorValue));
+
             case "name":
                 return driver.findElement(By.name(locatorValue));
+
             case "xpath":
                 return driver.findElement(By.xpath(locatorValue));
+
             case "cssselector":
                 return driver.findElement(By.cssSelector(locatorValue));
+
             case "classname":
                 return driver.findElement(By.className(locatorValue));
+
             default:
                 throw new InvalidException(locatorType);
         }

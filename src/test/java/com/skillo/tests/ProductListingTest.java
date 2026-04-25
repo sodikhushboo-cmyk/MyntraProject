@@ -20,7 +20,7 @@ public class ProductListingTest extends BaseClass {
         plp = new ProductListingPage();
     }
 
-    // ✅ Scenario: listing page loaded
+    // ✅ 1. Listing page loaded
     @Test(priority = 1)
     public void verifyProductListingDisplayed() {
 
@@ -32,7 +32,7 @@ public class ProductListingTest extends BaseClass {
         );
     }
 
-    // ✅ Scenario: click product
+    // ✅ 2. Click product
     @Test(priority = 2)
     public void verifyClickProduct() {
 
@@ -42,7 +42,7 @@ public class ProductListingTest extends BaseClass {
         Assert.assertTrue(true, "Product clicked successfully");
     }
 
-    // ✅ Scenario: switch to child window
+    // ✅ 3. Switch window
     @Test(priority = 3)
     public void verifySwitchToChildWindow() {
 
@@ -56,7 +56,7 @@ public class ProductListingTest extends BaseClass {
         );
     }
 
-    // ✅ Scenario: multiple product clicks
+    // ✅ 4. Multiple product clicks
     @Test(priority = 4)
     public void verifyMultipleProductClicks() {
 
@@ -68,11 +68,12 @@ public class ProductListingTest extends BaseClass {
         Assert.assertTrue(true, "Multiple products clickable");
     }
 
-    // ✅ Scenario: page stability
+    // ✅ 5. Page reload stability
     @Test(priority = 5)
     public void verifyListingPageReload() {
 
         home.navigateToTopwear();
+
         Keyword.getDriver().navigate().refresh();
 
         Assert.assertTrue(

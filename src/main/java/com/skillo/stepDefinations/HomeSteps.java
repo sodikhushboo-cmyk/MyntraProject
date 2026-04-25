@@ -31,7 +31,7 @@ public class HomeSteps {
         homePage = new HomePage(); // Hooks already opened browser
     }
 
-    // ✅ SINGLE SEARCH STEP (ONLY HERE)
+    // ✅ SEARCH
     @When("user search for the Various {string}")
     public void searchProduct(String product) {
 
@@ -43,7 +43,6 @@ public class HomeSteps {
         homePage.enterPressOnSearchBar();
     }
 
-    // ✅ SEARCH RESULT VALIDATION (IMPORTANT ADD)
     @Then("user should see the result for the valid product")
     public void verify_search_result() {
 
@@ -115,8 +114,9 @@ public class HomeSteps {
     }
 
     @Then("products should still be visible")
-    public void products_should_be_visible() {
-
-        Assert.assertTrue(false, "❌ Intentional Failure: Products not visible");
+    public void verify_products_visible() {
+        initHomePage();
+        Assert.assertTrue(homePage.isProductsDisplayed(),
+                "Products not visible");
     }
 }

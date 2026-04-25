@@ -23,6 +23,7 @@ public class ProductDetailsTest extends BaseClass {
         pdp = new ProductDetails();
     }
 
+    // 🔁 COMMON FLOW
     private void navigateToPDP() {
         home.navigateToTopwear();
         plp.clickProduct(0);
@@ -37,7 +38,10 @@ public class ProductDetailsTest extends BaseClass {
 
         pdp.addToBagWithoutSize();
 
-        Assert.assertTrue(pdp.isProductNotAdded());
+        Assert.assertTrue(
+                pdp.isProductNotAdded(),
+                "Product should not be added"
+        );
     }
 
     // ✅ Select size
@@ -48,20 +52,26 @@ public class ProductDetailsTest extends BaseClass {
 
         pdp.selectSize();
 
-        Assert.assertTrue(pdp.isSizeOptionsAvailable());
+        Assert.assertTrue(
+                pdp.isSizeOptionsAvailable(),
+                "Size not available"
+        );
     }
 
-	/*
-	 * // ✅ Add to bag
-	 * 
-	 * @Test(priority = 3) public void verifyAddToBagWithSize() {
-	 * 
-	 * navigateToPDP();
-	 * 
-	 * pdp.selectSize(); pdp.clickaddToBagProduct();
-	 * 
-	 * Assert.assertTrue(pdp.isGotoBagIsVisible()); }
-	 */
+    // ✅ Add to bag
+    @Test(priority = 3)
+    public void verifyAddToBagWithSize() {
+
+        navigateToPDP();
+
+        pdp.selectSize();
+        pdp.clickaddToBagProduct();
+
+        Assert.assertTrue(
+                pdp.isGotoBagIsVisible(),
+                "Add to bag failed"
+        );
+    }
 
     // ✅ Go to bag
     @Test(priority = 4)
@@ -88,17 +98,21 @@ public class ProductDetailsTest extends BaseClass {
         pdp.addToBagWithoutSize();
         pdp.addToBagWithoutSize();
 
-        Assert.assertTrue(pdp.isProductNotAdded());
+        Assert.assertTrue(
+                pdp.isProductNotAdded(),
+                "Product should not be added"
+        );
     }
 
-    // ✅ Product page
+    // ✅ Product page loaded
     @Test(priority = 6)
     public void verifyProductPageLoaded() {
 
         navigateToPDP();
 
         Assert.assertTrue(
-                Keyword.getDriver().getCurrentUrl().contains("buy")
+                Keyword.getDriver().getCurrentUrl().contains("buy"),
+                "Product page not loaded"
         );
     }
 
@@ -108,15 +122,21 @@ public class ProductDetailsTest extends BaseClass {
 
         navigateToPDP();
 
-        Assert.assertTrue(pdp.isAddToBagVisible());
+        Assert.assertTrue(
+                pdp.isAddToBagVisible(),
+                "Add to Bag button not visible"
+        );
     }
 
-    // ✅ Sizes visible
+    // ✅ Sizes available
     @Test(priority = 8)
     public void verifySizeOptionsAvailable() {
 
         navigateToPDP();
 
-        Assert.assertTrue(pdp.isSizeOptionsAvailable());
+        Assert.assertTrue(
+                pdp.isSizeOptionsAvailable(),
+                "Sizes not available"
+        );
     }
 }

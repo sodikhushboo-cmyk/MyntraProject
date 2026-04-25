@@ -21,11 +21,14 @@ public class Hooks {
 
         LOG.info("Starting Scenario: {}", scenario.getName());
 
+        // ✅ Open browser from config
         Keyword.openBrowser(App.browser());
 
+        // ✅ Waits for stability
         Keyword.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         Keyword.getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 
+        // ✅ Launch application
         Keyword.launchUrl(App.url());
     }
 
@@ -34,7 +37,7 @@ public class Hooks {
 
         LOG.info("Ending Scenario: {}", scenario.getName());
 
-        // 📸 Screenshot logic
+        // 📸 Screenshot handling (PASS + FAIL)
         if (scenario.isFailed()) {
 
             byte[] screenshot = Keyword.takeScreenshot(scenario.getName(), "failed");
@@ -52,6 +55,7 @@ public class Hooks {
             }
         }
 
+        // ✅ Always close browser
         Keyword.closeBrowser();
     }
 }

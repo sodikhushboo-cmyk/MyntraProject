@@ -35,18 +35,18 @@ public class ProductSteps {
 
     @When("user selects size")
     public void user_selects_size() {
-        detailsPage.selectSize();   // ✅ FIXED
+        detailsPage.selectSize();
     }
 
     @When("user clicks Add to Bag")
     public void user_clicks_add_to_bag() {
-        detailsPage.clickaddToBagProduct();   // ✅ FIXED
+        detailsPage.clickaddToBagProduct();
     }
 
     @When("user selects size and adds product to bag")
     public void select_size_and_add() {
         detailsPage.selectSize();
-        detailsPage.clickaddToBagProduct();   // ✅ FIXED
+        detailsPage.clickaddToBagProduct();
     }
 
     @When("user clicks on go to bag")

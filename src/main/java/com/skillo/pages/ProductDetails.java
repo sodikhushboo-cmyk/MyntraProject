@@ -48,7 +48,6 @@ public class ProductDetails {
         Waits.waitForPageToLoad();
     }
 
-    // ✅ NEW (missing earlier)
     public void selectSize() {
 
         Waits.waitForPageToLoad();
@@ -83,10 +82,8 @@ public class ProductDetails {
     public void goToBag() {
 
         try {
-            // wait for Add to Bag confirmation popup
-            Thread.sleep(2000);
+            Thread.sleep(2000); // popup delay
 
-            // Try clicking Go to Bag if visible
             By goToBagBtn = By.xpath("//a[contains(text(),'GO TO BAG')] | //span[contains(text(),'GO TO BAG')]");
 
             WebDriverWait wait = new WebDriverWait(Keyword.getDriver(), Duration.ofSeconds(10));
@@ -100,7 +97,7 @@ public class ProductDetails {
 
             System.out.println("⚠ Go To Bag not visible → navigating directly");
 
-            // ✅ fallback (MOST IMPORTANT)
+            // fallback
             Keyword.getDriver().get("https://www.myntra.com/checkout/cart");
         }
     }
@@ -108,8 +105,11 @@ public class ProductDetails {
     // ===== VALIDATIONS =====
 
     public boolean isGotoBagIsVisible() {
-
-        return driver.findElements(By.xpath(locator.get("goToBagPopupBtn"))).size() > 0;
+        try {
+            return driver.findElements(By.xpath(locator.get("goToBagPopupBtn"))).size() > 0;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public boolean isProductAdded() {
@@ -120,7 +120,6 @@ public class ProductDetails {
         return !added;
     }
 
-    // ✅ NEW
     public boolean isAddToBagVisible() {
         try {
             return addToBagBtn.isDisplayed();
@@ -129,7 +128,6 @@ public class ProductDetails {
         }
     }
 
-    // ✅ NEW
     public boolean isSizeOptionsAvailable() {
         return !availableSizes.isEmpty();
     }

@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="51" passed="46" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
   <suite started-at="2026-04-24T13:10:19 IST" name="Default suite" finished-at="2026-04-24T13:31:51 IST" duration-ms="1292127">
+=======
+<testng-results ignored="0" total="55" passed="46" failed="9" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-23T03:20:59 IST" name="Default suite" finished-at="2026-04-23T03:36:27 IST" duration-ms="927407">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
+<<<<<<< HEAD
     <test started-at="2026-04-24T13:10:19 IST" name="Default test" finished-at="2026-04-24T13:31:51 IST" duration-ms="1292127">
       <class name="com.skillo.runner.Runner">
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:10:19 IST" name="setUpClass" finished-at="2026-04-24T13:10:20 IST" duration-ms="1267" status="PASS">
@@ -15,13 +23,824 @@
             <param index="0">
               <value>
                 <![CDATA[org.testng.TestRunner@7a54fc29]]>
+=======
+    <test started-at="2026-04-23T03:20:59 IST" name="Default test" finished-at="2026-04-23T03:36:27 IST" duration-ms="927407">
+      <class name="com.skillo.runner.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:20:59 IST" name="setUpClass" finished-at="2026-04-23T03:21:00 IST" duration-ms="450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7af22a6]]>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:10:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:11:11 IST" duration-ms="50199" status="FAIL">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:21:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:21:10 IST" duration-ms="9673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:21:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:21:17 IST" duration-ms="7306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:21:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:21:24 IST" duration-ms="7337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:21:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:21:32 IST" duration-ms="7595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:21:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:21:39 IST" duration-ms="6990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:21:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:21:46 IST" duration-ms="6977" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:21:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:21:53 IST" duration-ms="6912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:21:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:22:00 IST" duration-ms="7019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:22:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:22:07 IST" duration-ms="7380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:22:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:22:15 IST" duration-ms="7451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:22:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:22:21 IST" duration-ms="6835" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:22:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:22:29 IST" duration-ms="7495" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:22:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:22:36 IST" duration-ms="7408" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:22:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:22:44 IST" duration-ms="7346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:22:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:22:51 IST" duration-ms="7642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:22:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:22:59 IST" duration-ms="7362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:22:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:23:06 IST" duration-ms="7319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:23:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:23:13 IST" duration-ms="6842" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality with valid men products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:23:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:23:18 IST" duration-ms="5618" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search with special characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'user enters special character to search product "@#$%^&*()"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user enters special character to search product {string}")
+public void user_enters_special_character_to_search_product(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user cannot find the men products")
+public void user_cannot_find_the_men_products() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user enters special character to search product "@#$%^&*()"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user enters special character to search product {string}")
+public void user_enters_special_character_to_search_product(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user cannot find the men products")
+public void user_cannot_find_the_men_products() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:23:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:23:24 IST" duration-ms="5398" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search with numbers"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'user enters numbers to search products "48964596186"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user enters numbers to search products {string}")
+public void user_enters_numbers_to_search_products(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user cannot find any matches")
+public void user_cannot_find_any_matches() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user enters numbers to search products "48964596186"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user enters numbers to search products {string}")
+public void user_enters_numbers_to_search_products(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user cannot find any matches")
+public void user_cannot_find_any_matches() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:23:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:23:29 IST" duration-ms="4730" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search with invalid text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'user enters giberish text to search product "xyzabc99999nonsense"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user enters giberish text to search product {string}")
+public void user_enters_giberish_text_to_search_product(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user cannot see men product")
+public void user_cannot_see_men_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user enters giberish text to search product "xyzabc99999nonsense"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user enters giberish text to search product {string}")
+public void user_enters_giberish_text_to_search_product(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user cannot see men product")
+public void user_cannot_see_men_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:23:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:23:31 IST" duration-ms="2817" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search suggestions"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'user enters some keyword to search "Shirt"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user enters some keyword to search {string}")
+public void user_enters_some_keyword_to_search(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user should see the autosuggestions")
+public void user_should_see_the_autosuggestions() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user enters some keyword to search "Shirt"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user enters some keyword to search {string}")
+public void user_enters_some_keyword_to_search(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user should see the autosuggestions")
+public void user_should_see_the_autosuggestions() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:23:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:23:36 IST" duration-ms="4376" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify wishlist without login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'user click on wishlist icon without login' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user click on wishlist icon without login")
+public void user_click_on_wishlist_icon_without_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user should redirected on the login page")
+public void user_should_redirected_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user click on wishlist icon without login' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user click on wishlist icon without login")
+public void user_click_on_wishlist_icon_without_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user should redirected on the login page")
+public void user_should_redirected_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:23:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:23:41 IST" duration-ms="5230" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify orders without login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Men Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'user click on orders List without login' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user click on orders List without login")
+public void user_click_on_orders_list_without_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user should redirected on the login page")
+public void user_should_redirected_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user click on orders List without login' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user click on orders List without login")
+public void user_click_on_orders_list_without_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user should redirected on the login page")
+public void user_should_redirected_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:23:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:24:08 IST" duration-ms="27299" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -51,7 +870,11 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:11:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:12:06 IST" duration-ms="55336" status="FAIL">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:24:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:24:55 IST" duration-ms="46767" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -81,7 +904,11 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:12:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:12:42 IST" duration-ms="36548" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:24:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:25:04 IST" duration-ms="8468" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -97,7 +924,11 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:12:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:13:29 IST" duration-ms="46960" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:25:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:25:11 IST" duration-ms="7510" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -113,7 +944,11 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:13:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:14:17 IST" duration-ms="47527" status="FAIL">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:25:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:25:39 IST" duration-ms="27926" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -143,7 +978,43 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:14:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:15:04 IST" duration-ms="47053" status="FAIL">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:25:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:25:47 IST" duration-ms="7742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify repeated refresh does not break flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:25:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:26:14 IST" duration-ms="27093" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user tries place order without refresh"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:26:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:26:41 IST" duration-ms="26939" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -173,7 +1044,27 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:15:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:15:41 IST" duration-ms="36655" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:26:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:27:08 IST" duration-ms="27145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify place order after multiple navigations"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:27:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:27:15 IST" duration-ms="7465" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -189,7 +1080,11 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:15:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:16:23 IST" duration-ms="42505" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:27:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:27:23 IST" duration-ms="7706" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -205,7 +1100,11 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:16:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:17:00 IST" duration-ms="36808" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:27:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:27:52 IST" duration-ms="29105" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -221,7 +1120,11 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:17:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:17:43 IST" duration-ms="43053" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:27:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:28:24 IST" duration-ms="32232" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -237,7 +1140,11 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:17:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:18:20 IST" duration-ms="37313" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:28:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:28:53 IST" duration-ms="28170" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -253,7 +1160,11 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:18:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:19:21 IST" duration-ms="61145" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:28:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:29:43 IST" duration-ms="50071" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -269,7 +1180,11 @@ at ✽.Order should be placed successfully(file:///C:/Users/simranjeet.gujral/Do
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:19:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:19:59 IST" duration-ms="37738" status="FAIL">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:29:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:30:10 IST" duration-ms="27608" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -299,7 +1214,11 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:19:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:21:04 IST" duration-ms="64840" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:30:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:31:04 IST" duration-ms="53936" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -315,7 +1234,43 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:21:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:21:44 IST" duration-ms="39568" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:31:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:31:33 IST" duration-ms="29098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify behavior when filter not applied"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:31:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:32:01 IST" duration-ms="27917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can open product without applying filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:32:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:32:29 IST" duration-ms="27621" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -331,6 +1286,7 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:21:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:21:59 IST" duration-ms="15498" status="PASS">
           <params>
             <param index="0">
@@ -687,6 +1643,12 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
           <params>
             <param index="0">
               <value>
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:32:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:32:36 IST" duration-ms="7354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
                 <![CDATA["Verify login page is displayed"]]>
               </value>
             </param>
@@ -699,7 +1661,11 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:27:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:27:38 IST" duration-ms="24935" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:32:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:33:06 IST" duration-ms="29787" status="FAIL">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -712,9 +1678,25 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.skillo.stepDefinations.LoginSteps.verify_login_popup(LoginSteps.java:31)
+at ✽.user should see login popup(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/login.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:27:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:27:49 IST" duration-ms="11585" status="PASS">
           <params>
             <param index="0">
@@ -812,6 +1794,9 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
           </reporter-output>
         </test-method> <!-- runScenario -->
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:29:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:29:50 IST" duration-ms="24111" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:33:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:33:15 IST" duration-ms="9266" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -827,7 +1812,11 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:29:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:30:08 IST" duration-ms="18804" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:33:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:33:27 IST" duration-ms="11740" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -843,7 +1832,27 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:30:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:30:46 IST" duration-ms="37423" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:33:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:33:41 IST" duration-ms="14251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can click Add to Bag"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:33:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:34:35 IST" duration-ms="53934" status="FAIL">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -856,10 +1865,185 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
               </value>
             </param>
           </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Go To Bag button not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Go To Bag button not found
+at com.skillo.pages.ProductDetails.goToBag(ProductDetails.java:89)
+at com.skillo.stepDefinations.ProductSteps.go_to_bag(ProductSteps.java:50)
+at ✽.user clicks on go to bag(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/product.feature:35)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class,'goToCart')]"}
+  (Session info: chrome=147.0.7727.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8c2468f8c362f4f0e50a4216e8a15afe, findElement {value=//a[contains(@class,'goToCart')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\SIMRAN~1.GUJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65431}, goog:processID: 21200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65431/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c2468f8c362f4f0e50a4216e8a15afe
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at com.skillo.utils.Waits.safeClick(Waits.java:107)
+at com.skillo.pages.ProductDetails.goToBag(ProductDetails.java:86)
+at com.skillo.stepDefinations.ProductSteps.go_to_bag(ProductSteps.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:30:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:31:06 IST" duration-ms="20286" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:34:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:35:42 IST" duration-ms="67315" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Add to Bag without switching tab"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'ADD TO BAG')]"}
+  (Session info: chrome=147.0.7727.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4397c02e43f121f2d95424e84eb99d81, findElement {value=//div[contains(text(),'ADD TO BAG')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\SIMRAN~1.GUJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65065}, goog:processID: 12676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65065/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4397c02e43f121f2d95424e84eb99d81]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'ADD TO BAG')]"}
+  (Session info: chrome=147.0.7727.102)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4397c02e43f121f2d95424e84eb99d81, findElement {value=//div[contains(text(),'ADD TO BAG')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\SIMRAN~1.GUJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65065}, goog:processID: 12676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65065/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4397c02e43f121f2d95424e84eb99d81
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy41.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:461)
+at com.skillo.utils.Waits.safeClick(Waits.java:141)
+at com.skillo.pages.ProductDetails.addToBagWithoutSize(ProductDetails.java:73)
+at com.skillo.stepDefinations.ProductSteps.add_without_size(ProductSteps.java:55)
+at ✽.user clicks on Add to Bag without selecting size(file:///C:/Users/simranjeet.gujral/Downloads/SinghFramework/MyntraProject/src/test/resources/product.feature:43)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:35:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:35:52 IST" duration-ms="9773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify behavior when no size selected"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Myntra Product Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:35:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:36:06 IST" duration-ms="14007" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -875,7 +2059,11 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:31:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:31:31 IST" duration-ms="24586" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:36:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:36:17 IST" duration-ms="10412" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -891,7 +2079,11 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:31:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T13:31:51 IST" duration-ms="20360" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:36:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-23T03:36:27 IST" duration-ms="10112" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <params>
             <param index="0">
               <value>
@@ -907,7 +2099,11 @@ at ✽.products should still be visible(file:///C:/Users/simranjeet.gujral/Downl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-24T13:31:51 IST" name="tearDownClass" finished-at="2026-04-24T13:31:51 IST" duration-ms="42" status="PASS">
+=======
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.skillo.runner.Runner@7f2cfe3f]" started-at="2026-04-23T03:36:27 IST" name="tearDownClass" finished-at="2026-04-23T03:36:27 IST" duration-ms="20" status="PASS">
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

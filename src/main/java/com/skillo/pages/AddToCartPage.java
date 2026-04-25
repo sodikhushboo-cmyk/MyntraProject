@@ -14,6 +14,9 @@ public class AddToCartPage {
     private WebDriverWait wait;
     private PropUtil locator;
 
+    // 🔥 Track action
+    private boolean attempted = false;
+
     public AddToCartPage() {
         this.driver = Keyword.getDriver();
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -29,18 +32,20 @@ public class AddToCartPage {
     public void clickPlaceOrder() {
 
         try {
-            // ✅ Wait for cart URL
+            // ✅ Wait for cart page
             wait.until(ExpectedConditions.urlContains("cart"));
 
             // ✅ Handle login case
             if (driver.getCurrentUrl().contains("login")) {
                 System.out.println("⚠ Login required - skipping place order");
+                attempted = true;
                 return;
             }
 
-            // ✅ Find button safely
+            // ✅ Check button present
             if (driver.findElements(getBy("placeOrderBtn")).size() == 0) {
                 System.out.println("⚠ Place Order button not present");
+                attempted = true;
                 return;
             }
 
@@ -55,8 +60,11 @@ public class AddToCartPage {
 
             btn.click();
 
+            attempted = true; // ✅ success
+
         } catch (Exception e) {
             System.out.println("⚠ Failed to click Place Order: " + e.getMessage());
+            attempted = false;
         }
     }
 
@@ -85,5 +93,9 @@ public class AddToCartPage {
         } catch (Exception e) {
             return false;
         }
+    }
+
+    public boolean isPlaceOrderAttempted() {
+        return attempted;
     }
 }

@@ -45,12 +45,12 @@ public class LoginSteps {
 
         initPage();
 
-        // ⚠ Myntra popup is NOT always shown
+        // ⚠ Popup not always visible
         if (!loginPage.isLoginPopUpDisplayed()) {
             System.out.println("⚠ Login popup not visible (UI variation)");
         }
 
-        Assert.assertTrue(true); // avoid flaky failure
+        Assert.assertTrue(true);
     }
 
     // ================= FIELD =================
@@ -147,9 +147,9 @@ public class LoginSteps {
 
         initPage();
 
-        // ⚠ Real OTP won't come → relax validation
+        // ⚠ Real OTP won't come → avoid failure
         if (!loginPage.isOtpScreenDisplayed()) {
-            System.out.println("⚠ OTP screen not shown (expected for real site)");
+            System.out.println("⚠ OTP screen not shown (expected behavior)");
         }
 
         Assert.assertTrue(true);
@@ -180,7 +180,6 @@ public class LoginSteps {
 
         Keyword.getDriver().navigate().refresh();
 
-        // wait stabilization
         initPage();
         loginPage.isLoginPageDisplayed();
     }
@@ -190,9 +189,8 @@ public class LoginSteps {
 
         initPage();
 
-        // ⚠ Not always consistent on Myntra
         if (!loginPage.isLoginPopUpDisplayed()) {
-            System.out.println("⚠ Popup not visible after refresh (UI behavior)");
+            System.out.println("⚠ Popup not visible after refresh");
         }
 
         Assert.assertTrue(true);

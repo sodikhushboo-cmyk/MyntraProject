@@ -5,6 +5,7 @@
     <classes>
       <class name="com.skillo.tests.CartPageTest">
         <methods>
+<<<<<<< HEAD
           <include name="verifyMultipleNavigation"/>
           <include name="verifyPlaceOrder"/>
           <include name="verifyRefreshAndPlaceOrder"/>
@@ -32,6 +33,18 @@
           <include name="tearDown"/>
           <include name="verifyInvalidMobileNumber"/>
           <include name="verifyLoginPopupDisplayed"/>
+=======
+          <include name="tearDown"/>
+          <include name="verifyProductDetailsInCart"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.skillo.tests.CartPageTest -->
+      <class name="com.skillo.tests.LoginPageTest">
+        <methods>
+          <include name="verifyLoginPopupVisible"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginPageVisible"/>
+>>>>>>> cdfcb8d46f925d9c8ba8f95fb96f05cbae9738be
           <include name="setUp"/>
         </methods>
       </class> <!-- com.skillo.tests.LoginPageTest -->

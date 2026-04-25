@@ -99,7 +99,7 @@ public class HomePageTest extends BaseClass {
         );
     }
 
-    // ❌ 7. Repeated Product Click Handling (Negative)
+    // ❌ 7. Repeated Product Click Handling (Edge Case)
     @Test(priority = 7)
     public void verifyRepeatedProductClickHandling() {
 

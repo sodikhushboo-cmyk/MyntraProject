@@ -1,5 +1,6 @@
 Feature: Myntra Login Functionality
 
+
   # ✅ BASIC VALIDATION
 
   Scenario: Verify login page is displayed
@@ -48,3 +49,12 @@ Feature: Myntra Login Functionality
     Given Browser is opened and login page is launched
     When user refreshes the page
     Then login popup should still be displayed
+
+Scenario: Verify login page is displayed
+  Given Browser is opened and login page is launched
+  Then user should be redirected to login page
+
+Scenario: Verify login popup is displayed
+  Given Browser is opened and login page is launched
+  Then user should see login popup
+

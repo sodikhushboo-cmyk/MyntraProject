@@ -3,6 +3,7 @@ package com.skillo.tests;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.skillo.base.BaseClass;
 import com.skillo.base.Keyword;
@@ -13,156 +14,122 @@ import com.skillo.pages.ProductListingPage;
 
 public class CartPageTest extends BaseClass {
 
-	private HomePage home;
-	private ProductListingPage plp;
-	private ProductDetails pdp;
-	private AddToCartPage cart;
+    private HomePage home;
+    private ProductListingPage plp;
+    private ProductDetails pdp;
+    private AddToCartPage cart;
 
-	private static final String PRODUCT = "t-shirt";
+    private static final String PRODUCT = "t-shirt";
 
-	@BeforeMethod
-	public void setupPages() {
-		home = new HomePage();
-		plp = new ProductListingPage();
-		pdp = new ProductDetails();
-		cart = new AddToCartPage();
-	}
+    @BeforeMethod
+    public void setupPages() {
+        home = new HomePage();
+        plp = new ProductListingPage();
+        pdp = new ProductDetails();
+        cart = new AddToCartPage();
+    }
 
-	// 🔁 COMMON FLOW → reach cart page
-	private void navigateToCartPage() {
+    // 🔁 COMMON FLOW → reach cart page
+    private void navigateToCartPage() {
 
-		home.enterTextOnSearchBar(PRODUCT);
-		home.enterPressOnSearchBar();
+        home.enterTextOnSearchBar(PRODUCT);
+        home.enterPressOnSearchBar();
 
-		plp.clickProduct(0);
-		plp.switchToChildWindow();
+        plp.clickProduct(0);
+        plp.switchToChildWindow();
 
-		pdp.selectSize();
-		pdp.clickaddToBagProduct();
-		pdp.goToBag();
-	}
+        pdp.selectSize(); // ✅ important fix
+        pdp.clickaddToBagProduct();
+        pdp.goToBag();
+    }
 
-	// ================= CORE =================
+    // ================= CORE =================
 
-	/*
-	 * @Test(priority = 1, groups = "smoke") public void verifyPlaceOrder() {
-	 * 
-	 * navigateToCartPage(); cart.clickPlaceOrder();
-	 * 
-	 * Assert.assertTrue(cart.isOrderPlaced(), "❌ Order not placed"); }
-	 */
+    @Test(priority = 1, groups = "smoke")
+    public void verifyCartPageLoaded() {
 
-	// ================= EDGE =================
+        navigateToCartPage();
 
-	/*
-	 * @Test(priority = 2, groups = "regression") public void
-	 * verifyMultiplePlaceOrderClicks() {
-	 * 
-	 * navigateToCartPage();
-	 * 
-	 * cart.clickPlaceOrder(); cart.clickPlaceOrder();
-	 * 
-	 * Assert.assertTrue(cart.isOrderPlaced(), "❌ Multiple click handling failed");
-	 * }
-	 */
+        Assert.assertTrue(
+                cart.isCartPageDisplayed(),
+                "❌ Cart page not loaded"
+        );
+    }
 
-	// ================= PAGE VALIDATION =================
+    // ================= FUNCTIONAL =================
 
-	@Test(priority = 3, groups = "smoke")
-	public void verifyCartPageLoaded() {
+    @Test(priority = 2, groups = "smoke")
+    public void verifyProductAddedToCart() {
 
-		navigateToCartPage();
+        SoftAssert softly = new SoftAssert();
 
-		Assert.assertTrue(cart.isCartPageDisplayed(), "❌ Cart page not loaded");
-	}
+        navigateToCartPage();
 
-	/*
-	 * @Test(priority = 4, groups = "smoke") public void
-	 * verifyPlaceOrderButtonClickable() {
-	 * 
-	 * navigateToCartPage();
-	 * 
-	 * Assert.assertTrue(cart.isPlaceOrderButtonVisible(),
-	 * "❌ Place Order button not visible"); }
-	 */
+        softly.assertTrue(
+                cart.isCartPageDisplayed(),
+                "Cart page not displayed"
+        );
 
-	// ================= REFRESH =================
+        softly.assertAll();
+    }
 
-	/*
-	 * @Test(priority = 5, groups = "regression") public void
-	 * verifyRefreshAndPlaceOrder() {
-	 * 
-	 * navigateToCartPage();
-	 * 
-	 * Keyword.getDriver().navigate().refresh(); cart.clickPlaceOrder();
-	 * 
-	 * Assert.assertTrue(cart.isOrderPlaced(), "❌ Order failed after refresh"); }
-	 * 
-	 * @Test(priority = 6, groups = "regression") public void
-	 * verifyMultipleRefresh() {
-	 * 
-	 * navigateToCartPage();
-	 * 
-	 * Keyword.getDriver().navigate().refresh();
-	 * Keyword.getDriver().navigate().refresh();
-	 * 
-	 * Assert.assertTrue(cart.isCartPageDisplayed(),
-	 * "❌ Cart page broken after multiple refresh"); }
-	 */
+    // ================= DATA VALIDATION =================
 
-	// ================= NAVIGATION =================
+    @Test(priority = 3, groups = "regression")
+    public void verifyProductDetailsInCart() {
 
-	
-	/*
-	 * @Test(priority = 7, groups = "regression") public void
-	 * verifyNavigationAndPlaceOrder() {
-	 * 
-	 * navigateToCartPage();
-	 * 
-	 * Keyword.getDriver().navigate().back();
-	 * Keyword.getDriver().navigate().forward();
-	 * 
-	 * cart.clickPlaceOrder();
-	 * 
-	 * Assert.assertTrue(cart.isOrderPlaced(), "❌ Order failed after navigation");
-	 * 
-	 * }
-	 */
-	 
-	 /** @Test(priority = 8, groups = "regression") public void
-	 * verifyMultipleNavigation() {
-	 * 
-	 * navigateToCartPage();
-	 * 
-	 * Keyword.getDriver().navigate().back();
-	 * Keyword.getDriver().navigate().forward();
-	 * Keyword.getDriver().navigate().back();
-	 * Keyword.getDriver().navigate().forward();
-	 * 
-	 * cart.clickPlaceOrder();
-	 * 
-	 * Assert.assertTrue(cart.isOrderPlaced(),
-	 * "❌ Order failed after multiple navigation"); }
-	 */
-	  
-	@Test(priority = 9, groups = "regression")
-	public void verifyOnlyNavigation() {
+        SoftAssert softly = new SoftAssert();
 
-		navigateToCartPage();
+        home.enterTextOnSearchBar(PRODUCT);
+        home.enterPressOnSearchBar();
 
-		Keyword.getDriver().navigate().back();
-		Keyword.getDriver().navigate().forward();
+        // Expected data
+        String expectedBrand = plp.getProductBrand(0);
+        int expectedPrice = plp.getProductPrice(0);
 
-		Assert.assertTrue(cart.isCartPageDisplayed(), "❌ Cart page unstable after navigation");
-	}
+        plp.clickProduct(0);
+        plp.switchToChildWindow();
 
-	@Test(priority = 10, groups = "regression")
-	public void verifyOnlyRefresh() {
+        pdp.selectSize();
+        pdp.clickaddToBagProduct();
+        pdp.goToBag();
 
-		navigateToCartPage();
+        // Actual data
+        String actualBrand = cart.getProductBrand();
+        int actualPrice = cart.getPriceOfProduct();
 
-		Keyword.getDriver().navigate().refresh();
+        softly.assertEquals(actualBrand, expectedBrand, "Brand mismatch");
+        softly.assertEquals(actualPrice, expectedPrice, "Price mismatch");
 
-		Assert.assertTrue(cart.isCartPageDisplayed(), "❌ Cart page unstable after refresh");
-	}
+        softly.assertAll();
+    }
+
+    // ================= STABILITY =================
+
+    @Test(priority = 4, groups = "regression")
+    public void verifyOnlyNavigation() {
+
+        navigateToCartPage();
+
+        Keyword.getDriver().navigate().back();
+        Keyword.getDriver().navigate().forward();
+
+        Assert.assertTrue(
+                cart.isCartPageDisplayed(),
+                "❌ Cart page unstable after navigation"
+        );
+    }
+
+    @Test(priority = 5, groups = "regression")
+    public void verifyOnlyRefresh() {
+
+        navigateToCartPage();
+
+        Keyword.getDriver().navigate().refresh();
+
+        Assert.assertTrue(
+                cart.isCartPageDisplayed(),
+                "❌ Cart page unstable after refresh"
+        );
+    }
 }
